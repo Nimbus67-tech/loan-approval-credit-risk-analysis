@@ -55,11 +55,11 @@ Six charts in [`visuals/`](visuals/):
 6. Approval Rate by Region (bonus)
 ## Power BI Dashboard
  
-Interactive dashboard in [`dashboard/`](dashboard/) (`loan_dashboard.pbix`), built on the cleaned dataset. Includes:
+Interactive dashboard in [`Dashboard/`](Dashboard/) (`loan_dashboard.pbix`), built on the cleaned dataset. Includes:
 - **3 KPI cards:** Total Applications, Approval Rate, Default Rate
 - **4 visuals:** Approval Rate by Loan Purpose, Applications Over Time, Applications by Region, Default Rate by Credit Band (matrix)
 - **4 slicers:** Region, Loan Purpose, Credit Band, Approval Status
-See a static preview: [`dashboard/dashboard_screenshot.png`](dashboard/dashboard_screenshot.png)
+See a static preview: [`dashboard/dashboard_screenshot.png`](Dashboard/dashboard_screenshot.png)
  
 ## Key Insights
  
