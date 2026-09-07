@@ -68,7 +68,7 @@ See a static preview: [`dashboard/dashboard_screenshot.png`](Dashboard/dashboard
 3. Loan purpose meaningfully affects approval odds: Business (43.3%) and Debt Consolidation (42.4%) approve most; Personal loans (37.2%) approve least.
 4. Income and loan amount are tightly coupled (r ≈ 0.89), concentrating risk among high-income outlier applicants.
 5. Regional approval rates are broadly balanced — geography isn't a major risk driver in this dataset.
-Full write-up: [`business_insights.md`](business_insights.md)
+Full write-up: [`business_insights.md`](business_insights)
  
 ## Business Recommendations
  
