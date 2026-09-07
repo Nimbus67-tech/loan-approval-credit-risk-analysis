@@ -1,0 +1,44 @@
+# Business Insights & Recommendations
+## Loan Approval & Credit Risk Analysis
+
+*Based on EDA (Tasks 3–4), visualizations (Task 5), and the Power BI dashboard (Task 6) built on 3,200 cleaned loan application records.*
+
+---
+
+## Key Business Insights
+
+**1. Credit score is the strongest predictor of default risk — far more than income.**
+Default rates fall steadily and consistently as credit score improves: 16.4% for "Poor" credit applicants, 13.9% for "Fair," 13.9% for "Good," dropping to 7.9% for "Very Good" and 7.1% for "Excellent." Meanwhile, the correlation between annual income and default status is weak, and the income-vs-default boxplot (Chart 5) shows heavy overlap between defaulters and non-defaulters. **Credit score, not income, should be the primary risk-weighting factor in approval decisions.**
+
+**2. The bank is more conservative than its risk profile requires.**
+Only ~41% of applications are approved overall, yet even the riskiest approved segment ("Poor" credit) defaults only 16.4% of the time — meaning over 83% of "Poor"-band borrowers who do get approved repay successfully. This suggests approval criteria may be filtering out more low-risk applicants than necessary, potentially at the cost of loan volume and interest income.
+
+**3. Loan purpose meaningfully affects approval likelihood, independent of applicant risk.**
+Business (43.3%) and Debt Consolidation (42.4%) loans have the highest approval rates, while Personal loans (37.2%) have the lowest — a 6-point gap. Since this pattern holds across the applicant pool broadly, it points to purpose-based underwriting bias rather than differences in applicant quality alone.
+
+**4. Income and loan amount are tightly coupled (r ≈ 0.89), which concentrates risk.**
+Because loan amounts are sized proportionally to income, high-income outlier applicants (up to ~₹950,000/year) also request proportionally larger loans. This means a small number of high-income defaults could have outsized financial impact compared to their share of total applications.
+
+**5. Regional approval rates are broadly balanced, with no major geographic red flag.**
+Applications are fairly evenly distributed across North (24.3%), South (19.6%), East/West/Central regions, and no single region shows a dramatically outsized default or approval rate — regional risk does not appear to be a major driver in this dataset, unlike credit score or loan purpose.
+
+---
+
+## High / Low Performing Areas
+
+| Dimension | Best Performing | Worst Performing |
+|---|---|---|
+| Approval rate by purpose | Business (43.3%) | Personal (37.2%) |
+| Default rate by credit band | Excellent (7.1%) | Poor (16.4%) |
+
+---
+
+## Business Recommendations
+
+**1. Shift underwriting weight toward credit score over income, and pilot a modest approval-rate increase for "Good"/"Very Good" bands.**
+Since default rate correlates far more tightly with credit score than income, the bank could safely relax income-based rejection criteria for applicants in the "Good" or better bands, likely increasing loan volume without materially increasing default exposure.
+
+**2. Re-evaluate Personal loan underwriting criteria specifically.**
+Given Personal loans show the lowest approval rate despite no clear evidence they carry higher intrinsic risk than other purposes in this dataset, a targeted review of that category's approval rules could recover otherwise-qualified applicants and grow that segment.
+
+*(Both recommendations are directly actionable from the dashboard's Credit Band matrix and the Approval Rate by Purpose chart, and can be monitored going forward using the same KPI cards — Approval Rate and Default Rate — as success metrics.)*
